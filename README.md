@@ -38,12 +38,7 @@ View History: Your transactions will appear below in the history section.
 Delete a transaction: Click the ❌ button next to any transaction to remove it.
 
 See your balance: The balance, total income, and total expenses update automatically.
-
-expense-tracker/
-│
-├─ tracker.html           
-├─ tracker.css 
-└─ tracker.js     
+    
 
 💻 Technologies Used
 
