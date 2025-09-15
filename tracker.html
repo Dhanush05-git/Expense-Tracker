@@ -5,43 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Expense Tracker</title>
   <link rel="stylesheet" href="tracker.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <h2>Expense Tracker</h2>
-  <div class="container">
-    <!-- Balance -->
-    <h4>Your Balance</h4>
-    <h1 id="balance">&#8377;0.00</h1>
+  <h2 class="title">Expense Tracker</h2>
 
-    <!-- Income & Expense -->
-    <div class="inc-exp-container">
-      <div>
-        <h4>Income</h4>
-        <p id="money-plus" class="money-plus">+&#8377;0.00</p>
-      </div>
-      <div>
-        <h4>Expense</h4>
-        <p id="money-minus" class="money-minus">-&#8377;0.00</p>
-      </div>
+  <div class="main-container">
+    <!-- Left Side: Pie Chart -->
+    <div class="chart-container">
+      <h3>Expense Breakdown</h3>
+      <canvas id="expenseChart"></canvas>
     </div>
 
-    <!-- Transaction History -->
-    <h3>History</h3>
-    <ul id="list" class="list"></ul>
+    <!-- Right Side: Tracker -->
+    <div class="tracker-container">
+      <!-- Balance -->
+      <h4>Your Balance</h4>
+      <h1 id="balance">&#8377;0.00</h1>
 
-    <!-- Add New Transaction Form -->
-    <h3>Add New Transaction</h3>
-    <form id="form">
-      <div class="form-control">
-        <label for="text">Text</label>
-        <input type="text" id="text" placeholder="Enter name"/>
+      <!-- Income & Expense Summary -->
+      <div class="inc-exp-container">
+        <div>
+          <h4>Income</h4>
+          <p id="money-plus" class="money-plus">+&#8377;0.00</p>
+        </div>
+        <div>
+          <h4>Expense</h4>
+          <p id="money-minus" class="money-minus">-&#8377;0.00</p>
+        </div>
       </div>
-      <div class="form-control">
-        <label for="amount">Amount <br> (negative - expense, positive - income)</label>
-        <input type="number" id="amount" placeholder="Enter amount"> 
-      </div>
-      <button class="btn">Submit</button>
-    </form>
+
+      <!-- Transaction History -->
+      <h3>History</h3>
+      <ul id="list" class="list"></ul>
+
+      <!-- Add New Transaction -->
+      <h3>Add Transaction</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Description</label>
+          <input type="text" id="text" placeholder="Enter name" required />
+        </div>
+        <div class="form-control">
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" placeholder="Enter amount" required />
+        </div>
+
+        <!-- Two Buttons for Income & Expense -->
+        <div class="button-container">
+          <button type="button" id="addIncome" class="btn btn-green">Add Income</button>
+          <button type="button" id="addExpense" class="btn btn-red">Add Expense</button>
+        </div>
+      </form>
+    </div>
   </div>
 
   <script src="tracker.js"></script>
