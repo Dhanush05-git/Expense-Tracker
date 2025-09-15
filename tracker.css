@@ -5,7 +5,7 @@ body {
   padding: 0;
   min-height: 100vh;
 
-  background: url("Gemini_Generated_Image_e13f5xe13f5xe13f.png") no-repeat center center/cover;
+  background: url("background.png") no-repeat center center/cover;
   background-attachment: fixed;
 
   display: flex;
