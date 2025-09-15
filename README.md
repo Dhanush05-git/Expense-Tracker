@@ -15,7 +15,8 @@ Persistent Data – all your transactions are saved in your browser using local 
 
 🖥️ Screenshots
 
-<img width="1504" height="756" alt="Screenshot 2025-09-15 at 12 34 41 PM" src="https://github.com/user-attachments/assets/149253c8-dc8b-482a-bde3-27e7b0813e0f" />
+<img width="1500" height="753" alt="Screenshot 2025-09-15 at 10 54 08 PM" src="https://github.com/user-attachments/assets/5b8c9040-c0e1-4869-a168-9d59c252cc33" />
+
 
 ⚙️ How to Use
 
