@@ -1,71 +1,49 @@
-# Expense-Tracker
-A simple and interactive Expense Tracker web application to help you manage your finances. You can easily track income, expenses, and balance in real time. Each transaction you add is saved locally in your browser, so it persists even if you refresh the page.
+💰 Expense Tracker
+An interactive and user-friendly web application designed to help you effortlessly manage your personal finances. Track your income and expenses in real time, visualize your financial habits, and maintain a clear overview of your balance. All your data is saved locally in your browser, ensuring your financial history persists across sessions.
 
-💡 Features
+✨ Features
+Real-time Balance Tracking: Instantly see your current balance, which updates automatically with every transaction.
 
-Track your balance – see your total income minus expenses.
+Income & Expense Insights: Get a quick overview of your total income and expenses.
 
-Income and Expense Overview – separate sections for quick visualization.
+Detailed Transaction History: View a chronological list of all your transactions with clear descriptions and amounts.
 
-Transaction History – shows all your transactions with clear labels for income (+) and expense (-).
+Effortless Deletion: Easily remove any transaction with a single click.
 
-Delete Transactions – remove a specific transaction with a single click.
+Persistent Data: All transactions are stored securely in your browser's local storage, so your data remains intact even if you close the tab or refresh the page.
 
-Persistent Data – all your transactions are saved in your browser using local storage.
-
-🖥️ Screenshots
-
-<img width="1500" height="753" alt="Screenshot 2025-09-15 at 10 54 08 PM" src="https://github.com/user-attachments/assets/5b8c9040-c0e1-4869-a168-9d59c252cc33" />
-
+📸 Demo
+<img width="1500" height="753" alt="Screenshot 2025-09-15 at 10 54 08 PM" src="https://github.com/user-attachments/assets/d498d25b-2349-49cf-ac6d-f60d088d5337" />
 
 ⚙️ How to Use
+Launch the App: Open index.html in your web browser.
 
-Open the project: Open index.html in your browser.
+Add a Transaction:
 
-Add a transaction:
+Enter a description for the transaction (e.g., "salary," "groceries").
 
-Enter a description in the Text field.
+Enter the amount. Use a positive number for income (e.g., 50000) and a negative number for expenses (e.g., -3000).
 
-Enter an amount in the Amount field:
+Click the Add Income or Add Expense button.
 
-Positive number → Income
+View Your History: Your new transaction will appear in the history list.
 
-Negative number → Expense
+Delete a Transaction: Click the ❌ button next to any transaction to remove it.
 
-Click Submit.
-
-View History: Your transactions will appear below in the history section.
-
-Delete a transaction: Click the ❌ button next to any transaction to remove it.
-
-See your balance: The balance, total income, and total expenses update automatically.
-    
+Check Your Balance: Your total balance, income, and expenses will automatically update.
 
 💻 Technologies Used
+HTML: Provides the foundational structure of the application.
 
-HTML – structure of the app.
+CSS: Styles the user interface, ensuring a clean and responsive design.
 
-CSS – styling and responsive layout.
+JavaScript: Powers the dynamic functionality, including DOM manipulation, data handling, and local storage integration.
 
-JavaScript – dynamic behaviour, DOM manipulation, and local storage.
+💡 How It Works
+The application utilizes JavaScript to manage and manipulate data. When you add a new transaction, it's saved in a JavaScript array and synchronized with your browser's local storage. This ensures data persistence. The app then dynamically updates the displayed balance, income, and expense totals. When you delete a transaction, it's removed from both the on-screen list and local storage, ensuring your data remains accurate and up to date.
 
-🚀 How it Works
-
-Adding a Transaction:
-When you submit a transaction, it is saved in an array and in local storage, then displayed in the history list.
-
-Updating Balance:
-The app calculates total income, total expenses, and current balance in real time.
-
-Deleting a Transaction:
-Clicking the ❌ button removes the transaction from the history, updates the balance, and deletes it from local storage.
-
-📝 Notes
-
-All transactions are saved locally, so clearing browser data will remove them.
-
-Only basic input validation is applied (cannot submit empty text or amount).
+📝 Important Note
+This application saves data locally to your browser. If you clear your browser's cache or local storage, your transaction history will be permanently deleted.
 
 👨‍💻 Author
-
-Dhanush Gundu – Frontend Enthusiast | Web Developer 
+Dhanush Gundu – Frontend Enthusiast & Web Developer
